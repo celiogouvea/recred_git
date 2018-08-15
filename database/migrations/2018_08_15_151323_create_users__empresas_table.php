@@ -15,6 +15,12 @@ class CreateUsersEmpresasTable extends Migration
     {
         Schema::create('users__empresas', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->integer('empresa_id')->unsigned();
+            $table->foreign('empresa_id')->references('id')->on('empresas');
+            $table->string('cargo');
+            $table->date('data_admicao');
             $table->timestamps();
         });
     }
