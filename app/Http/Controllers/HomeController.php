@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use App\User;
+use App\Model\Empresas;
 
 class HomeController extends Controller
 {
@@ -21,8 +24,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index( User $user)
     {
-        return view('home');
+        return view('home', compact('users'));
     }
 }
