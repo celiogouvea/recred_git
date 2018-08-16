@@ -4,12 +4,15 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\User;
 
 class UsuarioController extends Controller
 {
     public function index()
     {
-        return view('admin.usuario.index');
+        $user = auth()->user();
+
+        return view('admin.usuario.index', compact('user'));
     }
 
     public function cadastro()
@@ -26,4 +29,9 @@ class UsuarioController extends Controller
     {
         return view('admin.usuario.excluir');
     }
+
+
+
+
+
 }

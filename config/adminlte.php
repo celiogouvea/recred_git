@@ -126,22 +126,22 @@ return [
             'submenu'=>[
                 [
                     'text' => 'Usuario',
-                    'url'  => 'usuario',
+                    'url'  => 'admin/usuario',
                     'icon' => 'user',
                 ],
                 [
                     'text' => 'Cadastrar',
-                    'url'  => 'cadastroUsuario',
+                    'url'  => 'admin/cadastroUsuario',
                     'icon' => 'file-text',
                 ],
                 [
                     'text' => 'Editar',
-                    'url'  => 'editarUsuario',
+                    'url'  => 'admin/editarUsuario',
                     'icon' => 'edit',
                 ],
                 [
                     'text' => 'Excluir',
-                    'url'  => 'excluirUsuario',
+                    'url'  => 'admin/excluirUsuario',
                     'icon' => 'trash',
                 ],
             ]
@@ -149,37 +149,41 @@ return [
         'EMPRESA',
         [
             'text' => 'Perfil',
-            'url'  => 'admin/settings',
             'icon' => 'building',
             'submenu'=>[
                 [
+                    'text' => 'Empresa',
+                    'url'  => 'admin/empresa',
+                    'icon' => 'institution',
+                ],
+                [
                     'text' => 'Cadastrar Notas',
-                    'url'  => '',
+                    'url'  => 'admin/cadastroEmpresaNota',
                     'icon' => 'file-text',
                 ],
                 [
                     'text' => 'Alterar Notas',
-                    'url'  => '',
+                    'url'  => 'admin/editarEmpresaNota',
                     'icon' => 'edit',
                 ],
                 [
                     'text' => 'Excluir Notas',
-                    'url'  => '',
+                    'url'  => 'admin/excluirEmpresaNota',
                     'icon' => 'trash',
                 ],
                 [
                     'text' => 'Cadastar Empresa',
-                    'url'  => '',
+                    'url'  => 'admin/cadastroEmpresa',
                     'icon' => 'institution',
                 ],
                 [
                     'text' => 'Alterar Empresa',
-                    'url'  => '',
+                    'url'  => 'admin/editarEmpresa',
                     'icon' => 'edit',
                 ],
                 [
                     'text' => 'Excluir Empresa',
-                    'url'  => '',
+                    'url'  => 'admin/excluirEmpresa',
                     'icon' => 'trash',
                 ],
             ]
@@ -192,22 +196,22 @@ return [
             'submenu'=>[
                 [
                 'text' => 'Advogado',
-                'url'  => 'advogado',
+                'url'  => 'admin/advogado',
                 'icon' => 'gavel',
                 ],
                 [
                     'text' => 'Cadastrar',
-                    'url'  => 'cadastroAdvogado',
+                    'url'  => 'admin/cadastroAdvogado',
                     'icon' => 'file-text',
                 ],
                 [
                     'text' => 'Editar',
-                    'url'  => 'editarAdvogado',
+                    'url'  => 'admin/editarAdvogado',
                     'icon' => 'edit',
                 ],
                 [
                     'text' => 'Excluir',
-                    'url'  => 'excluirAdvogado',
+                    'url'  => 'admin/excluirAdvogado',
                     'icon' => 'trash',
                 ],
             ]
@@ -215,30 +219,34 @@ return [
         'CONTADOR',
         [
             'text' => 'Perfil',
-            'url'  => 'admin/settings',
             'icon' => 'balance-scale',
             'submenu'=>[
                 [
+                'text' => 'Contador',
+                'url'  => 'admin/contador',
+                'icon' => 'gavel',
+                ],
+                [
                     'text' => 'Cadastrar',
-                    'url'  => '',
+                    'url'  => 'admin/cadastroContador',
                     'icon' => 'file-text',
                 ],
                 [
                     'text' => 'Editar',
-                    'url'  => '',
+                    'url'  => 'admin/editarContador',
                     'icon' => 'edit',
                 ],
                 [
                     'text' => 'Excluir',
-                    'url'  => '',
+                    'url'  => 'admin/excluirContador',
                     'icon' => 'trash',
                 ],
             ]
         ],
         'FINANÇAS',
         [
-            'text' => 'Perfil',
-            'url'  => 'admin/settings',
+            'text' => 'Relatorios',
+            'url'  => 'admin/relatorios',
             'icon' => 'money',
         ],
     ],
