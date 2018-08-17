@@ -3,17 +3,13 @@
 @section('title', 'Usuario')
 
 @section('content_header')
-    <h1>Usuário</h1>
+    
 @stop
 
 @section('content')
     <div class="box">
-        <div class="box-header">
-
-
-        </div>
         <div class="box-body">
-            <div class="small-box bg-green">
+            <div class="small-box bg-blue">
                 <div class="inner">
                     <h3>Dados do Usuário</h3>
                     <br/>
@@ -27,34 +23,34 @@
 
         <div class="box box-success">
             <div class="box-header with-border">
-                <h3 class="box-title">Nome:</h3>
+                <h5 class="box-title">Nome:</h5>
             </div>
             <div class="box-body">
-                <h2>{{$user->name}}</h2>
+                <h4>{{$user->name}}</h4>
             </div>
             <div class="box-header with-border">
-                <h3 class="box-title">Email:</h3>
+                <h5 class="box-title">Email:</h5>
             </div>
             <div class="box-body">
-                <h2>{{$user->email}}</h2>
+                <h4>{{$user->email}}</h4>
             </div>
             <div class="box-header with-border">
-                <h3 class="box-title">C.P.F:</h3>
+                <h5 class="box-title">C.P.F:</h5>
             </div>
             <div class="box-body">
-                <h2>{{$user->cpf}}</h2>
+                <h4>{{$user->cpf}}</h4>
             </div>
             <div class="box-header with-border">
-                <h3 class="box-title">Telefone</h3>
+                <h5 class="box-title">Telefone:</h5>
             </div>
             <div class="box-body">
-                <h2>{{$user->telefone}}</h2>
+                <h4>{{$user->telefone}}</h4>
             </div>
             <div class="box-header with-border">
-                <h3 class="box-title">Endereço:</h3>
+                <h5 class="box-title">Endereço:</h5>
             </div>
             <div class="box-body">
-                <h2>{{$user->endereco}}, {{$user->bairro}} , {{$user->cidade}} - {{$user->estado}}</h2>
+                <h4>{{$user->endereco}}, {{$user->bairro}} , {{$user->cidade}} - {{$user->estado}}</h4>
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@ class CreateEmpresasTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->integer('cnpj')->unique();
+            $table->string('cnpj')->unique();
             $table->string('imagem')->nullable();
             $table->string('telefone');
             $table->string('endereco');

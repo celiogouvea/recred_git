@@ -3,7 +3,10 @@
 @section('title', 'Usuario')
 
 @section('content_header')
-    <h1>Usuário</h1>
+    <ol class="breadcrumb">
+        <li><a href="">Usuário</a></li>
+        <li><a href="">Editar</a></li>
+    </ol>
 @stop
 
 @section('content')

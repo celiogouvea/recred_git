@@ -21,6 +21,7 @@ $this->group(['middleware' => ['auth'], 'namespace' => 'Admin', 'prefix'=> 'admi
     $this->get('usuario', 'UsuarioController@index')->name('admin.usuario');
     //rota para cadastro de usuario
     $this->get('cadastroUsuario', 'UsuarioController@cadastro')->name('admin.cadastrUsuario');
+    $this->post('cadastroUsuario', 'UsuarioController@usuarioSalvar')->name('admin.usuarioSalvar');
     //rota para editar usuario
     $this->get('editarUsuario', 'UsuarioController@cadastro')->name('admin.editarUsuario');
     //rota para excluir usuario
